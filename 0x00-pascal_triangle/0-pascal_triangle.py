@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Pascal Triangle
+Pascal Trangle
 """
 
 
@@ -20,6 +20,6 @@ def pascal_triangle(n):
                 row = [1]
                 for j in range(1, len(res[-1])):
                     row.append(res[-1][j] + res[-1][j - 1])
-                    row.append()
-                    res.append(row)
-                    return res
+                row.append(1)
+                res.append(row)
+        return res
